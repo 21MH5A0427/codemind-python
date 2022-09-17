@@ -1,11 +1,13 @@
-n=list(input())
+n=int(input())
 c=0
 s=1
-for i in n:
-    a=int(i)
-    c+=a
-    s*=a
+while n>0:
+    r=n%10
+    c+=r
+    s*=r
+    n=n//10
 if c==s:
-    print("Spy Number")
+    print('Spy Number')
 else:
-    print("Not Spy Number")
+    print('Not Spy Number')
+    
